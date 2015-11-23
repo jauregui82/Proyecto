@@ -25,6 +25,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     <link rel="stylesheet" type="text/css" href="Galeria/css/component.css" />
+    
     <script src="Galeria/js/modernizr.min.js"></script>
 </head>
 
@@ -42,7 +43,7 @@
                 <a id="logo" class="pull-left" href="index.html"></a>
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav">
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.php">Inicio</a></li>
                         <!--
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -65,10 +66,12 @@
                         </li>
                         -->
                         
-                        <li><a href="#">Salir</a></li>
+                        <li><a href="index.php">Salir</a></li>
+                        <!--
                         <li class="login">
                             <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
                         </li>
+                        -->
                     </ul>        
                 </div><!--/.nav-collapse -->
             </div>
@@ -125,9 +128,9 @@
     }
     
     </style>
-<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="jquery.lightbox-0.5.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen" />
+<script type="text/javascript" src="Galeria/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="Galeria/jquery.lightbox-0.5.js"></script>
+<link rel="stylesheet" type="text/css" href="Galeria/jquery.lightbox-0.5.css" media="screen" />
 <script type="text/javascript" src="webcam.js"></script>
     <script language="JavaScript">
         webcam.set_api_url( 'test.php' );//PHP adonde va a recibir la imagen y la va a guardar en el servidor
@@ -324,7 +327,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span5 cp">
-                &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                &copy; 2015 <a target="_blank" href="#" title="">Jauregui Crespo Y Eduardo Daboin</a>. Seccion 8.
             </div>
             <!--/Copyright-->
 
@@ -352,7 +355,6 @@
     </div>
 </footer>
 <!--/Footer-->
-
 <!--  Login form -->
 <div class="modal hide fade in" id="loginForm" aria-hidden="false">
     <div class="modal-header">
@@ -361,7 +363,7 @@
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="form-login">
+        <form class="form-inline" action="index.php" method="post" id="form-login">
             <input type="text" class="input-small" placeholder="Email">
             <input type="password" class="input-small" placeholder="Password">
             <label class="checkbox">

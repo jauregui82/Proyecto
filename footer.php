@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span5 cp">
-                &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                &copy; 2015 <a target="_blank" href="#" title="">Jauregui Crespo Y Eduardo Daboin</a>. Seccion 8.
             </div>
             <!--/Copyright-->
 
@@ -31,3 +31,4 @@
     </div>
 </footer>
 <!--/Footer-->
+

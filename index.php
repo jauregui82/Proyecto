@@ -27,6 +27,17 @@
     <link rel="stylesheet" type="text/css" href="Galeria/css/component.css" />
     <script src="Galeria/js/modernizr.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="/canvas/js/prefixfree.min.js"></script>
+
+<style> 
+
+ canvas {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: -34px;
+}
+</style>
 
 </head>
 
@@ -49,6 +60,7 @@
                         
                     
                      <li class="active"><a href="index.php">Inicio</a></li>
+                     <!--
                         <li><a href="about-us.html">Quiénes Somos</a></li>
                         <li><a href="services.html">Servicios</a></li>
                         <!--<li><a href="quienes-somos.php">Galería</a></li>-->
@@ -69,7 +81,7 @@
                             </ul>
                         </li>
                         <li><a href="blog.html">Blog</a></li> -->
-                        <li><a href="contact-us.html">Contacto</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
                         <li class="login">
                             <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
                         </li> 
@@ -77,6 +89,9 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
+
+        <canvas id="canvas"></canvas>
+        <script src="canvas/js/index.js"></script>
     </header>
     <!-- /header -->
 
@@ -170,97 +185,97 @@
                     <figure>
                         <a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="Galeria/img/1.jpg" alt="img01"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Serenity Beach</h2>
+                            <h2 class="photostack-title">Calidad</h2>
                         </figcaption>
                     </figure>
                     <figure>
                         <a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="Galeria/img/2.jpg" alt="img02"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Happy Days</h2>
+                            <h2 class="photostack-title">Seguridad</h2>
                         </figcaption>
                     </figure>
                     <figure>
                         <a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="Galeria/img/3.jpg" alt="img03"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Beautywood</h2>
+                            <h2 class="photostack-title">Compromiso</h2>
                         </figcaption>
                     </figure>
                     <figure>
                         <a href="http://goo.gl/49lN3k" class="photostack-img"><img src="Galeria/img/4.jpg" alt="img04"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Heaven of time</h2>
+                            <h2 class="photostack-title">Profesionales en el Área</h2>
                         </figcaption>
                     </figure>
                     <figure>
                         <a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="Galeria/img/5.jpg" alt="img05"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Speed Racer</h2>
+                            <h2 class="photostack-title">Protección</h2>
                         </figcaption>
                     </figure>
                     <figure>
                         <a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="Galeria/img/6.jpg" alt="img06"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Forever this</h2>
+                            <h2 class="photostack-title">Confianza</h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/7.jpg" alt="img07"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Lovely Green</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/8.jpg" alt="img08"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Wonderful</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/9.jpg" alt="img09"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Love Addict</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/10.jpg" alt="img10"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Friendship</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/11.jpg" alt="img11"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">White Nights</h2>
+                            <h2 class="photostack-title"> </h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/12.jpg" alt="img12"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Serendipity</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/13.jpg" alt="img13"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Pure Soul</h2>
+                            <h2 class="photostack-title"> </h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/14.jpg" alt="img14"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Winds of Peace</h2>
+                            <h2 class="photostack-title"> </h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/15.jpg" alt="img15"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Shades of blue</h2>
+                            <h2 class="photostack-title"> </h2>
                         </figcaption>
                     </figure>
                     <figure data-dummy>
                         <a href="#" class="photostack-img"><img src="Galeria/img/16.jpg" alt="img16"/></a>
                         <figcaption>
-                            <h2 class="photostack-title">Lightness</h2>
+                            <h2 class="photostack-title"></h2>
                         </figcaption>
                     </figure>
                 </div>
@@ -292,6 +307,9 @@
 
 
 <!-- /GAlLERIA-->
+
+
+<!-- 
 
 <section id="services">
     <div class="container">
@@ -380,7 +398,10 @@
 
     </div>
 </section>
+-->
+
 <!--/Services-->
+<!-- 
 
 <section id="recent-works">
     <div class="container">
@@ -390,7 +411,10 @@
         </div>  
         <div class="gap"></div>
         <ul class="gallery col-4">
+     
             <!--Item 1-->
+            <!-- 
+
             <li>
                 <div class="preview">
                     <img alt=" " src="images/portfolio/thumb/item1.jpg">
@@ -413,6 +437,7 @@
             <!--/Item 1--> 
 
             <!--Item 2-->
+            <!--   
             <li>
                 <div class="preview">
                     <img alt=" " src="images/portfolio/thumb/item2.jpg">
@@ -435,6 +460,7 @@
             <!--/Item 2-->
 
             <!--Item 3-->
+            <!--   
             <li>
                 <div class="preview">
                     <img alt=" " src="images/portfolio/thumb/item3.jpg">
@@ -457,6 +483,7 @@
             <!--/Item 3--> 
 
             <!--Item 4-->
+            <!--   
             <li>
                 <div class="preview">
                     <img alt=" " src="images/portfolio/thumb/item4.jpg">
@@ -476,24 +503,25 @@
                     </div>
                 </div>                 
             </li>
-            <!--/Item 4-->               
-
+            /Item 4-->               
+<!--   
         </ul>
     </div>
 
 </section>
+-->
 
 <section id="clients" class="main">
     <div class="container">
         <div class="row-fluid">
             <div class="span2">
                 <div class="clearfix">
-                    <h4 class="pull-left">OUR PARTNERS</h4>
+                    <h4 class="pull-left">Proveedores</h4>
                     <div class="pull-right">
                         <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
                     </div>
                 </div>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <p>Trabajamos con la mejor calidad en camaras y con las mejores marcas del mercado</p>
             </div>
             <div class="span10">
                 <div id="myCarousel" class="carousel slide clients">
@@ -502,10 +530,11 @@
                     <div class="active item">
                         <div class="row-fluid">
                             <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                                <li class="span3"><a href="https://www.samsung-security.com/es-es/products/security-cameras.aspx"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="http://www.casmar.es/"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="http://panasonic.net/sanyo/"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="http://www.panasonic.com/global/home.html"><img src="images/sample/clients/client4.png"></a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -513,10 +542,10 @@
                     <div class="item">
                         <div class="row-fluid">
                             <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="https://www.samsung-security.com/es-es/products/security-cameras.aspx"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="http://www.casmar.es/"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="http://panasonic.net/sanyo/"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="http://www.panasonic.com/global/home.html"><img src="images/sample/clients/client4.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -524,10 +553,12 @@
                     <div class="item">
                         <div class="row-fluid">
                             <ul class="thumbnails">
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
-                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                            
+                                <li class="span3"><a href="https://www.samsung-security.com/es-es/products/security-cameras.aspx"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="http://www.casmar.es/"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="http://panasonic.net/sanyo/"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="http://www.panasonic.com/global/home.html"><img src="images/sample/clients/client4.png"></a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -543,11 +574,12 @@
 
 
 <!--Footer-->
+
 <footer id="footer">
     <div class="container">
         <div class="row-fluid">
             <div class="span5 cp">
-                &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                &copy; 2015 <a  href="#" title="">Jauregui Crespo Y Eduardo Daboin</a>. Seccion 8.
             </div>
             <!--/Copyright-->
 

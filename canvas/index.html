@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CCTV Everywhere</title>
+    
+    
+    
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      *{
+  margin: 0;
+	padding: 0
+}
+body{
+  background: #fafafa;
+  font-family:Courier;
+}
+canvas {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 25px;
+}
+.info{
+  font-size:50px;
+  text-align:center;
+  margin-top: 50px;
+  width:40%;
+  margin: 50px auto 0 auto;
+  transition: opacity 2s;
+}
+.download-link{
+  font-size:16px;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+}
+.download-link a{
+  color:#fa4e3e;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <canvas id="canvas"></canvas>
+<div class="info">move your mouse</div>
+  
+  <div class="download-link">Get it here: <a href="http://moklick.github.io/cctv-everywhere">http://moklick.github.io/cctv-everywhere</a>
+  
+<!--
+
+Cookies? Oldschool!! 
+I use CCTV cams to track my users! 
+Watch your step, they are everywhere.
+
+Thanks to @andymensional for the smooth movement of the camera
+
+-->
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
