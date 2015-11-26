@@ -1,12 +1,15 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Inicio | Nova</title>
+    <title>Inicio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -585,15 +588,16 @@
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.php" method="post" id="form-login">
-            <input type="text" class="input-small" placeholder="Usuario">
-            <input type="password" class="input-small" placeholder="Contraseña">
+        <form class="form-inline" action="login.php" method="post" id="form-login">
+            <input type="text" class="input-small" name="usuario" placeholder="Usuario">
+            <input type="password" class="input-small" name="clave" placeholder="Contraseña">
             <label class="checkbox">
                 <input type="checkbox"> Recordar mi Cuenta
             </label>
-           <!-- <button type="submit" class="btn btn-primary">Entrar</button>  -->
-            <input type="button" class="btn btn-primary" value="Entrar" onClick=" window.location.href='inicio.php' ">
-
+           
+           <button type="submit" class="btn btn-primary" value="1">Entrar</button> 
+           <!--<input type="button" class="btn btn-primary" value="Entrar" onClick=" window.location.href='login.php' "> 
+-->
         </form>
         <a href="#">¿Olvido su Contraseña?</a>
     </div>
