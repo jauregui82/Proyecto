@@ -1,4 +1,7 @@
-
+<?php 
+    session_start(); 
+    require_once ('class_conectar.php'); 
+?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -580,6 +583,19 @@
 <?php include_once('./footer.php'); ?>
 <!--/Footer-->
 
+<script type="text/javascript">
+function inicio (){    
+
+     <?php    
+          if(isset($_SESSION['usuario'])) {    
+     ?>
+            
+             <?php include_once('./inicio.php'); ?>
+    <?php 
+          }
+    ?>
+}
+</script>
 <!--  Login form -->
 <div class="modal hide fade in" id="loginForm" aria-hidden="false">
     <div class="modal-header">
@@ -594,10 +610,10 @@
             <label class="checkbox">
                 <input type="checkbox"> Recordar mi Cuenta
             </label>
-           
-           <button type="submit" class="btn btn-primary" value="1">Entrar</button> 
-           <!--<input type="button" class="btn btn-primary" value="Entrar" onClick=" window.location.href='login.php' "> 
--->
+           <!--
+           <button type="submit" class="btn btn-primary" value="" onclick="window.location.href='inicio.php">Entrar</button> -->
+           <input type="button" class="btn btn-primary" value="Entrar" onClick=" window.location.href='login.php' "> 
+
         </form>
         <a href="#">¿Olvido su Contraseña?</a>
     </div>
